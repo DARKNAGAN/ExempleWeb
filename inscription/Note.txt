@@ -1,0 +1,45 @@
+- Mettre Msg erreur dans une function
+
+<?php
+exit('<div id="error"><p>'.$mess.'</p>
+   <p>Cliquez <a href="./index.php">ici</a> pour revenir à la page d\'accueil</p></div></div></body></html>');
+?>
+
+
+
+
+
+Connexion 
+
+--Cacher si pas connecter 
+<input type="hidden" name="page" value="<?php echo $_SERVER['HTTP_REFERER']; ?>" />
+
+--Session Membre ou non
+<?php
+$page = htmlspecialchars($_POST['page']);
+echo 'Cliquez <a href="'.$page.'">ici</a> pour revenir à la page précédente';
+?>
+
+Inscrription mail (function.php)
+
+<?php
+//Message
+$message = "Bienvenue sur mon super forum !";
+//Titre
+$titre = "Inscription à mon super forum !";
+
+mail($_POST['adressemail'], $titre, $message);
+?>
+
+
+Amelioration possible  
+
+- Validation avec code aléatoire : inscription 
+
+- check Box se souvenir de moi connexion 
+
+- Systeme Anti Bot
+
+
+
+-- Cryptage en md5

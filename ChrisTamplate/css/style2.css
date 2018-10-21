@@ -1,0 +1,393 @@
+/*
+width: Largeur	
+height: Taille
+
+*/
+/* Lien Button Style 
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+*/
+/***************ALL***************/
+header{
+background: url('../images/header.jpg');
+text-align: center;
+position: center;
+height: 100px;
+border-color: green;
+border-style: solid;
+border-width: 3px;
+}
+body{
+background-color: rgba(255, 174, 0, 0.07);
+border-color: blue ;
+border-style: solid;
+border-width: 2px;
+}
+footer{
+background: url('../images/header.jpg');
+text-align: center;
+height: 150px;
+border-color: red;
+border-style: solid;
+border-width: 3px;
+width: : 100%;
+}
+
+section{
+overflow: hidden;
+}
+article{
+background-color: rgba(255, 174, 0, 0.07);
+border-color: silver;
+border-style: solid;
+border-width: 1px;
+}
+aside{
+border-color: black;
+border-style: solid;
+border-width: 3px;
+}
+div{
+
+}
+h1{
+
+}
+h2{
+	
+}
+h3{
+	
+}
+h4{
+	
+}
+h5{
+	
+}
+h6{
+
+}
+p{
+
+}
+button {
+
+}
+img{
+
+}
+a{
+
+}
+span{
+
+}
+.grid-container{
+	background-color: #f1f1f1;
+}
+.clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    overflow: hidden; /* Précaution pour IE 7 */
+}
+/***************ALL***************/
+/***************Header***************/
+#imageHeader{
+    height: 100%;
+    width: auto;
+}
+/***************Header***************/
+/***************Navigateur***************/
+#nav{
+   margin:0;
+   padding:0;
+   background:#808259 url('../images/footer.jpg') 0 0 repeat-x;
+   float:left;
+   width:100%;
+   border:1px solid #42432d;
+   border-width:1px 0;
+   list-style-type:none /* point de la liste à cacher */
+}
+#nav a:link, #nav a:visited{
+   color:#000;
+   background:#b2b580;
+   padding:20px 40px 4px 10px;
+   float:left;
+   width:auto;
+   border-right:1px solid #42432d;
+   text-decoration:none;
+   font:bold 1em/1em Arial, Helvetica, sans-serif;
+   text-transform:uppercase;
+   text-shadow: 2px 2px 2px #555;
+}
+#nav li:first-child a{
+	border-left:1px solid #42432d;
+}
+#nav a:hover{
+	color:#fff;
+	background:#727454;
+}
+#homeNav #nav-home a, #newsNav #nav-news a, #shopNav #nav-shop a
+{
+	background:#e35a00;
+	color:#fff;
+	text-shadow:none;
+}
+ 
+#homeNav #nav-home a:hover, #newsNav #nav-news a:hover, #shopNav #nav-shop a:hover 
+{
+	background:#e35a00;
+}
+ 
+#nav a:active 
+{
+	background:#e35a00;
+	color:#fff;
+}
+/***************Navigateur***************/
+/***************Home Slide***************/
+@keyframes AutoSlide {
+	0% {
+		left: 0px; /*1ère image*/
+	}
+	15% {
+		left: 0px; /*idem pour attente*/
+	}
+	35% {
+		left: -720px; /*2ème image*/
+	}
+	50% {
+		left: -720px; /*idem pour attente*/
+	}
+	70% {
+		left: -1450px; /*3ème image*/
+	}
+	85% {
+		left: -1450px; /*idem pour attente*/
+	}
+	100% {
+		left: 0px; /*1ère image*/
+	}
+}
+/*Taille du slide*/
+#slideshowhome {
+	position: relative;
+	width: 720px;
+	height: 550px;
+	margin: auto;
+	overflow: hidden;
+}
+/*Taille d'image*/
+#imageSlide{
+	width: 720px;  
+	height: 550px;
+}
+#sContent li {
+	display: inline;
+}
+/*Position du contenue dans le slide*/
+#sContent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2170px;  /* image width X3 environ*/
+	margin: 0;            
+	padding: 0;
+	
+	/*CSS3 keyframes animation*/
+	animation-name: AutoSlide;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+/***************Home Slide***************/
+/***************News List Home***************/
+.boxNewsHome{
+	border-color: silver;
+	border-style: solid;
+	border-width: 1px;
+	width: 50%;
+}
+#imgNewsHome{
+
+}
+.titleNewsHome{
+
+}
+#tdNewsHome{
+
+}
+.descNewsHome{
+	height: 100px;
+	color: blue;
+}
+.overflow-ellipsis{
+	height: 100px;
+	overflow: hidden; 
+   	word-wrap: break-word;
+}
+.boxNewsHomeF{
+	border-color: silver;
+	border-style: solid;
+	border-width: 1px;
+	width: 100%;
+}
+#imgNewsHomeF{
+	max-height:300px;
+}
+.titleNewsHomeF{
+
+}
+#tdNewsHomeF{
+
+}
+.descNewsHomeF{
+	height: 100px;
+	color: blue;
+}
+.overflow-ellipsisF{
+	height: 100px;
+	overflow: hidden; 
+   	word-wrap: break-word;
+}
+/***************News List Home***************/
+/***************News List***************/
+.boxNews{
+	border-color: silver;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	min-height: 250px;
+	margin: 1em 0;
+}
+#imgNews{
+	width: auto;/*300350*/
+	height: auto;
+	float: left;
+}
+.titleNews{
+
+}
+#tdNews{
+
+}
+.descNews{
+	height: 70px;
+	color: blue;
+}
+.overflow-ellipsis{
+	height: 70px;
+	overflow: hidden; 
+   	word-wrap: break-word;
+}
+.buttonArt{
+	display: block;
+}
+.buttonComment{
+	font: bold 13px Arial;
+	text-decoration: none;
+	background-color: #EEEEEE;
+	color: #333333;
+	padding: 2px 6px 2px 6px;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #CCCCCC;
+	width: 100%;
+	display: inline-block;
+}
+.buttonInfo{
+	font: bold 13px Arial;
+	text-decoration: none;
+	background-color: #EEEEEE;
+	color: #333333;
+	padding: 2px 6px 2px 6px;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #CCCCCC;
+	width: 100%;
+	display: inline-block;
+}
+/***************News List***************/
+/***************Shop List***************/
+.artShop{
+	border-color: silver;
+	border-style: solid;
+	border-width: 1px;
+	height: 150px;
+	margin: 2px;
+}
+#imgShop{
+	width: 100%;
+	height: 100%;
+}
+.imgShop{
+	width: 148px;
+	height: 148px;
+	float: left;
+}
+#imgPanier{
+	width: 20px;
+	height: 20px;
+}
+.titleNews{
+
+}
+#vendShop{
+color: blue
+}
+#priceShop{
+color: green;
+}
+.descNews{
+	height: 70px;
+	color: blue;
+}
+.overflow-ellipsis{
+	height: 70px;
+	overflow: hidden; 
+   	word-wrap: break-word;
+}
+/***************Shop List***************/
+/***************Footer***************/
+.footLink{
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+#footic{
+	padding-top: 20%;
+}
+.footListLink{
+	width: 200px;
+	height: 100%;
+	float: right;
+}
+#footerNavList{
+	width: 150px;
+	height: 100%;
+	list-style-type:none;
+}
+#footNavTitle{
+	size: 10px;
+	font-weight: bold;
+}
+#footNavLabel{
+	font-size: 12px;
+	text-align: right;
+}
+/***************Footer***************/
